@@ -17,13 +17,15 @@
 
 <!-- JS -->
 <script setup>
+import { computed } from 'vue';
+import { useStore } from 'vuex';
 
-const users = [
-  { name: 'Lucas Gomes', phone: '21965665513' },
-  { name: 'Lucas Gomes 2', phone: '21965665513' },
-  { name: 'Lucas Gomes 3', phone: '21965665513' },
-  { name: 'Lucas Gomes 4', phone: '21965665513' },
-]
+const store = useStore()
+
+const users = computed(() => store.state.users)
+
+
+
 </script>
 
 <!-- CSS -->

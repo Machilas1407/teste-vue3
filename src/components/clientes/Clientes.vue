@@ -13,7 +13,7 @@ import ModalAdicionarCliente from './modals/ModalAdicionarCliente.vue'
 import SectionClientes from './partials/SectionClientes.vue';
 
 
-const showModal = ref(true)
+const showModal = ref(false)
 
 const openModal = () => {
   showModal.value = true
